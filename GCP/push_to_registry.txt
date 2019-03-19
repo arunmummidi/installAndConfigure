@@ -1,0 +1,5 @@
+docker build -t image-name:`date +"%m-%d-%y"` .
+docker tag image-name:`date +"%m-%d-%y"` gcr.io/project/image-name:`date +"%m-%d-%y"`
+gcloud docker -- push gcr.io/project/imagename:`date +"%m-%d-%y"`
+docker tag image-name gcr.io/project/image-name
+gcloud docker -- push gcr.io/project/image-name
